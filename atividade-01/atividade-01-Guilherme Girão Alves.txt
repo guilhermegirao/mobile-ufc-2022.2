@@ -1,0 +1,49 @@
+Aluno: Guilherme Girão Alves - 494336
+
+Questão 1:
+
+function imc(peso, altura) {
+  return peso / Math.pow(altura, 2);
+}
+
+Questão 2:
+
+function fnMedia(np1, np2) {
+  return (np1 + np2) / 2;
+}
+
+function situacaoAluno(np1, np2) {
+  let media = fnMedia(np1, np2);
+
+  if (media >= 7.0) {
+    return "Aprovado com Conceito A";
+  } else if (media < 4.0) {
+    return "Reprovado Direto";
+  } else {
+    let nfinal = 5.0;
+
+    let novaMedia = fnMedia(media, nfinal);
+
+    if (novaMedia >= 5.0) {
+      return "Aprovado com Conceito B";
+    } else {
+      return "Reprovado na Final";
+    }
+  }
+}
+
+Questão 3:
+
+function reprovados(alunos) {
+  let res = "<ul>";
+  
+  for (const aluno of alunos) {
+    if (aluno.ira < 7.0) {
+      res += `<li>Nome: ${aluno.nome}, IRA: ${aluno.ira}</li>`;
+    }
+  }
+
+  res += "</ul>";
+
+  return res;
+}
