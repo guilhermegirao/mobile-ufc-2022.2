@@ -14,13 +14,7 @@ export default function App() {
       <Text style={Styles.textTitle}>Questão 01:</Text>
       <Questao01>
         <Questao01A nome="Guilherme" sobrenome="Girão" curso="CC" />
-        <Questao01B
-          disciplinas={[
-            "REDES",
-            "PROJETO DE INTERFACES MÓVEIS",
-            "ESTÁGIO CURRICULAR II",
-          ]}
-        />
+        <Questao01B />
       </Questao01>
 
       <Text style={Styles.textTitle}>Questão 02:</Text>

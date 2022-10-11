@@ -1,6 +1,12 @@
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import { FlatList, Text, View } from "react-native";
 
-const Questao01B = ({ disciplinas }) => {
+const Questao01B = () => {
+  const disciplinas = [
+    "REDES",
+    "PROJETO DE INTERFACES MÓVEIS",
+    "ESTÁGIO CURRICULAR II",
+  ];
+
   return (
     <View>
       <Text>Disciplinas:</Text>
